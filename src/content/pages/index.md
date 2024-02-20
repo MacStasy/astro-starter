@@ -18,7 +18,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: hero
-    imagePath: /uploads/pexels-pixabay-33786.jpg
+    imagePath: /src/assets/pexels-pixabay-33786.jpg
     altText: An image
     name: The hero with Astro Image
     width: 800
@@ -41,10 +41,10 @@ content_blocks:
       _bookshop_name: global/button
       path: /
       button_text: Read Analysis
-      button_text_color: '#fff'
-      button_color: '#c7588e'
+      button_text_color: "#fff"
+      button_color: "#c7588e"
   - _bookshop_name: hero
-    imagePath: /src/assets/blog-thumb-1.jpg
+    imagePath: /src/assets/pexels-pixabay-33786.jpg
     altText: An image
     name: The hero nobody asked for
     width: 800
