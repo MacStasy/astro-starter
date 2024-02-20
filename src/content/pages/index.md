@@ -47,7 +47,7 @@ content_blocks:
     imagePath: /src/assets/pexels-pixabay-33786.jpg
     altText: An image
     name: The hero nobody asked for
-    width: 800
-    height: 800
+    width: 300
+    height: 300
     icon: times
 ---
