@@ -1,125 +1,133 @@
 paths:
-  data: data
+  uploads: /src/assets/images/
   static: public
-  uploads: public/uploads
+  data: data
 collections_config:
   data:
     path: data
+    output: false
+    icon: notes
     disable_add: true
     disable_add_folder: true
-  posts:
-    path: src/content/blog
-    output: true
-    url: '/blog/[slug]/'
-    _enabled_editors:
-      - content
-      - visual
-    add_options:
-      - name: Add New Post
-        schema: default
-        icon: post_add
-    schemas:
-      default:
-        name: New Post
-        path: schemas/post.md
-    _inputs:
-      title:
-        empty_type: string
-      image:
-        empty_type: string
-      image_alt:
-        empty_type: string
-      author:
-        empty_type: string
-      tags:
-        type: multiselect
-        allow_create: true
-        empty_type: array
+    disable_file_actions: false
   pages:
     path: src/content/pages
-    url: '/[slug]/'
     output: true
+    url: /[slug]/
+    filter:
+      base: strict
     icon: wysiwyg
     _enabled_editors:
       - visual
-    filter:
-      base: strict
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 collection_groups:
   - heading: Pages
     collections:
       - pages
-  - heading: Blogging
-    collections:
-      - posts
   - heading: Data
     collections:
       - data
 _inputs:
   layout:
+    type: auto
     hidden: true
+    cascade: true
   date:
+    type: auto
     instance_value: now
+    cascade: true
   title_suffix:
+    type: auto
     comment: Added at the end of the title and highlighted in a different color
+    cascade: true
   page_size:
     type: number
     comment: The number of collection items to list per page
+    cascade: true
   social:
+    type: auto
     options:
       preview:
         icon: link
+    cascade: true
   links:
+    type: auto
     options:
       preview:
         icon: link
+    cascade: true
   items:
+    type: auto
     options:
       preview:
         icon: link
+    cascade: true
   social[*].icon:
     type: select
     options:
+      allow_empty: true
       values:
         - ph-facebook-logo
         - ph-instagram-logo
         - ph-twitter-logo
         - ph-github-logo
         - ph-youtube-logo
+    cascade: true
   logo_url:
+    type: auto
     comment: Link for the logo in the top left of the footer
+    cascade: true
   copyright:
+    type: auto
     comment: Automatically prefixed with the current year
+    cascade: true
   isActive:
     type: switch
+    cascade: true
   page_description:
+    type: auto
     comment: Defaults to the description set in the Site SEO data file
+    cascade: true
   favicon_icon:
     type: image
     comment: For the shortcut icon meta tag
+    cascade: true
   faivcon_image:
     type: image
     comment: For the icon meta tag
+    cascade: true
   canonical_url:
+    type: auto
     comment: Defaults to the pages url
+    cascade: true
   featured_image:
+    type: auto
     comment: Defaults to the image set in the Site SEO data file
+    cascade: true
   open_graph_type:
+    type: auto
     comment: Defaults to the type 'website'
+    cascade: true
   author_twitter_handle:
+    type: auto
     comment: Defaults to the twitter site value set in the Site SEO data file
+    cascade: true
   no_index:
     type: checkbox
-    comment:
+    comment: >-
       When selected this removes the page from your sitemap and adds the noindex
       robots meta tag
-
-data_config:
-  icons:
-    path: data/icons.yaml
-
+    cascade: true
+_select_data: {}
 _structures:
   features:
+    style: select
     values:
       - value:
           item:
           isActive:
+_editables: {}
+data_config: {}
+timezone: Europe/Amsterdam
