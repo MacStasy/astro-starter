@@ -1,15 +1,11 @@
 ---
 _schema: page
-title: Home
+title: Homepage
 description: >-
-  We believe that a good email marketing strategy is the key to growth. So we’re
-  helping you grow your business with tools and resources that make email
-  marketing easy.
+  Homepage description
 seo:
   page_description: >-
-    We believe that a good email marketing strategy is the key to growth. So
-    we’re helping you grow your business with tools and resources that make
-    email marketing easy.
+    seo description
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -32,7 +28,7 @@ content_blocks:
   #   height: 300
   #   icon: times
   - _bookshop_name: splitImage
-    imagePath: /src/assets/pexels-pixabay-33786.jpg
+    imagePath: /src/assets/images/mark-and-kimberly.png
     altText: Mark and Kimberly
     title: Who we are
     content: Our two founders have helped some of the world's biggest, and fastest growing, brands uncover how to create joy in their products and organizations.
