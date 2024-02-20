@@ -17,37 +17,25 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: hero
+  # - _bookshop_name: hero
+  #   imagePath: /src/assets/pexels-pixabay-33786.jpg
+  #   altText: An image
+  #   name: The hero with Astro Image
+  #   width: 800
+  #   height: 800
+  #   icon: user
+  # - _bookshop_name: hero
+  #   imagePath: /src/assets/pexels-pixabay-33786.jpg
+  #   altText: An image
+  #   name: The hero nobody asked for
+  #   width: 300
+  #   height: 300
+  #   icon: times
+  - _bookshop_name: splitImage
     imagePath: /src/assets/pexels-pixabay-33786.jpg
-    altText: An image
-    name: The hero with Astro Image
-    width: 800
-    height: 800
-    icon: user
-  - _bookshop_name: left-right
-    bg_image: /images/backgrounds/textures/home-waves.svg
-    heading: Keep what you need. Delete the rest.
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    image: /images/transparent-bg/undraw-hello.svg
-    image_alt:
-    button:
-      _bookshop_name: global/button
-      path: /
-      button_text: Read Analysis
-      button_text_color: "#fff"
-      button_color: "#c7588e"
-  - _bookshop_name: hero
-    imagePath: /src/assets/pexels-pixabay-33786.jpg
-    altText: An image
-    name: The hero nobody asked for
-    width: 300
-    height: 300
-    icon: times
+    altText: Mark and Kimberly
+    title: Who we are
+    content: Our two founders have helped some of the world's biggest, and fastest growing, brands uncover how to create joy in their products and organizations.
+    width: 774
+    height: 774
 ---
