@@ -1,5 +1,5 @@
 paths:
-  uploads: /src/assets/images/
+  uploads: src/assets
   static: public
   data: data
 collections_config:

@@ -28,7 +28,7 @@ content_blocks:
   #   height: 300
   #   icon: times
   - _bookshop_name: splitImage
-    imagePath: /src/assets/images/mark-and-kimberly.png
+    imagePath: /src/assets/mark-and-kimberly.png
     altText: Mark and Kimberly
     title: Who we are
     content: Our two founders have helped some of the world's biggest, and fastest growing, brands uncover how to create joy in their products and organizations.
