@@ -7,8 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "prebuild:fetch-theme-color": "node fetch-theme-color.cjs"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/react": "^3.0.10",
