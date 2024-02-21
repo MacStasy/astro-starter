@@ -1,7 +1,6 @@
 ---
 import "../styles/main.scss";
 import site from "../../data/site.json";
-import Header from "@components/header";
 import Nav from "@components/header/nav.astro";
 import Footer from "@components/footer/footer.astro";
 import { SEO } from "astro-seo";
@@ -72,11 +71,10 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
     />
   </head>
   <body>
-    <!-- <Header /> -->
-    <Nav />
+    <!-- <Nav /> -->
     <main>
       <slot />
     </main>
-    <Footer />
+    <!-- <Footer /> -->
   </body>
 </html>
