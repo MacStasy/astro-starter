@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.0.10",
-    "@astrojs/tailwind": "^5.1.0",
     "@bookshop/astro-bookshop": "3.9.0",
     "@types/react": "^18.2.57",
     "@types/react-dom": "^18.2.19",
@@ -20,8 +19,7 @@
     "json-to-pretty-yaml": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "0.32.6",
-    "tailwindcss": "^3.4.1"
+    "sharp": "0.32.6"
   },
   "devDependencies": {
     "@astrojs/rss": "^4.0.5",
