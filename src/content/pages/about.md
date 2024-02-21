@@ -13,7 +13,7 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: heroHeading
+  - _bookshop_name: heroheading
     title: We've assembled a team of strategists, creatives and designers that are experts in modern happiness brands and how to build them.
     button:
       url: /mission/

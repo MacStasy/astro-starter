@@ -13,7 +13,7 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: heroHeading
+  - _bookshop_name: heroheading
     title: "We're a strategic partner to brands guiding them on how to tap into today's biggest growth driver: happiness, health and wellbeing."
     button:
       url: /mission/
