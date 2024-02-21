@@ -10,12 +10,18 @@ spec:
 blueprint:
   title:
   content:
-  imageLeft:
-  altTextLeft:
-  imageRight:
-  altTextRight:
-  width:
-  height:
+  width: 504
+  height: 504
+  leftProfile:
+    name:
+    position:
+    content:
+    imagePath:
+  rightProfile:
+    name:
+    position:
+    content:
+    imagePath:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
