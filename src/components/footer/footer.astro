@@ -1,13 +1,13 @@
 ---
 import footer from "@data/footer.json";
-import { getImage } from "astro:assets";
+// import { getImage } from "astro:assets";
 
-const logoImage = await getImage({
-  src: footer.logo,
-  format: "svg",
-  width: 96.914,
-  height: 32,
-});
+// const logoImage = await getImage({
+//   src: footer.logo,
+//   format: "svg",
+//   width: 96.914,
+//   height: 32,
+// });
 ---
 
 <div class="footer">
@@ -37,10 +37,10 @@ const logoImage = await getImage({
       }
     </div>
     <div class="footer-logo">
-      <picture>
+      <!-- <picture>
         <source srcset={logoImage.src} />
         <img src={logoImage.src} alt="logo Squint" />
-      </picture>
+      </picture> -->
     </div>
   </div>
 
