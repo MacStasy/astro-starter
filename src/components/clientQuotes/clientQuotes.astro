@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+const testimonialEntries = await getCollection("testimonials");
+---
+
+<div class="testimonials-wrapper">
+    {testimonialEntries.map(testimonial => (
+
+        <!-- slide -->
+        <div class="testimonial-card">
+            <Image
+            src={testimonial.data.image} 
+            width={72} 
+            alt={testimonial.data.name} 
+            draggable="false"
+            class="testimonial-image" />
+            <div class="testimonial-content">
+                <h3 class="testimonial-title">{testimonial.data.name}</h3>
+                <p class="testimonial-subtitle">{testimonial.data.position}</p>
+                <p class="testimonial-text">{testimonial.data.content}</p>
+            </div>
+        </div>
+        <!-- end of slide -->
+        ))}
+</div>

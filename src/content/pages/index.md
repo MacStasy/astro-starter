@@ -41,7 +41,7 @@ content_blocks:
       number: 69
       suffix: "%"
       subtitle: Employee Turnover
-  # - _bookshop_name: clientQuotes
+  - _bookshop_name: clientQuotes
   - _bookshop_name: splitImage
     imagePath: /src/assets/mark-and-kimberly.png
     altText: Mark and Kimberly

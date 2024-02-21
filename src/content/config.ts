@@ -12,20 +12,6 @@ const seoSchema = z
   })
   .optional();
 
-const blogCollection = defineCollection({
-  schema: z.object({
-    date: z.string(),
-    title: z.string(),
-    tags: z.array(z.string()),
-    author: z.string(),
-    thumb_image_path: z.string(),
-    thumb_image_alt: z.string(),
-    image: z.string(),
-    image_alt: z.string(),
-    seo: seoSchema,
-  }),
-});
-
 const pageSchema = z.object({
   _schema: z.string().optional(),
   title: z.string(),
@@ -48,7 +34,17 @@ const pagesCollection = defineCollection({
   schema: z.union([paginatedCollectionSchema, pageSchema]),
 });
 
+const testimonialsCollection = defineCollection({
+  type: 'content',
+  schema: ({ image }) => z.object({
+      name: z.string(),
+      position: z.string(),
+      image: image(),
+      content: z.string(),
+  })
+});
+
 export const collections = {
-  blog: blogCollection,
+  testimonials: testimonialsCollection,
   pages: pagesCollection,
 };
