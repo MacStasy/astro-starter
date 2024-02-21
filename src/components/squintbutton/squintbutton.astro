@@ -1,0 +1,85 @@
+---
+const {
+  color = "black",
+  url,
+  text,
+  target = "_self",
+  padding = "",
+} = Astro.props;
+---
+
+<style>
+  .squint-button.no-margin {
+    margin: 0;
+  }
+
+  .squint-button.middle {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  a.squint-button-style {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 7.5rem;
+    padding: 1rem 2rem;
+    line-height: normal;
+    width: fit-content;
+    transition: 0.3s ease-in-out;
+    letter-spacing: normal;
+  }
+
+  a.squint-button-style.narrow {
+    padding: 1rem 1.5625rem;
+  }
+
+  a.black {
+    background-color: var(--squint-black);
+    color: #fff;
+  }
+
+  a.orange,
+  a.black:hover {
+    background-color: var(--squint-orange);
+    color: var(--squint-black);
+  }
+
+  a.orange:hover {
+    background-color: var(--squint-black);
+    color: var(--squint-black);
+  }
+
+  a.grey {
+    background-color: var(--gray-4);
+    color: var(--gray-3);
+  }
+
+  a.grey:hover {
+    background-color: var(--squint-black);
+  }
+
+  /* @media (max-width: 374px) {
+    a.squint-button-style {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    a.squint-button-style {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  } */
+</style>
+
+<div class="squint-button">
+  <a
+    href={url}
+    target={target && target}
+    class={"squint-button-style " + color + " " + padding}>{text}</a
+  >
+</div>

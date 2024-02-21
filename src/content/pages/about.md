@@ -13,6 +13,11 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
+  - _bookshop_name: heroheading
+    title: We've assembled a team of strategists, creatives and designers that are experts in modern happiness brands and how to build them.
+    button:
+      url: /mission/
+      text: More about what we do
   - _bookshop_name: team
     title: Who we are
     content: Our two founders have helped some of the world's biggest, and fastest growing, brands uncover how to create joy in their products and organizations.
