@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: Hero Home
-  description: Hero from Homepage
-  tags: ["block", "hero"]
+  label: Middle Title
+  description: Middle Title block
+  tags: ["block", "title"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:

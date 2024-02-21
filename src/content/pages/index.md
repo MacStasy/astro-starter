@@ -19,13 +19,13 @@ content_blocks:
     button:
       url: /contact/
       text: Let's talk
-  # - _bookshop_name: MiddleTitle
-  #   title: Happiness is the best business strategy.
-  #   content: Happiness has been proven to have a powerful impact on the most important business and enterprise metrics.
-  #   button:
-  #     url: /mission/
-  #     text: Explore how we work
-  # - _bookshop_name: Figures
+  - _bookshop_name: middleTitle
+    title: Happiness is the best business strategy.
+    content: Happiness has been proven to have a powerful impact on the most important business and enterprise metrics.
+    button:
+      url: /mission/
+      text: Explore how we work
+  # - _bookshop_name: figures
   #   left:
   #     prefix: +
   #     number: 37
@@ -41,7 +41,7 @@ content_blocks:
   #     number: 69
   #     suffix: "%"
   #     subtitle: Employee Turnover
-  # - _bookshop_name: ClientQuotes
+  # - _bookshop_name: clientQuotes
   - _bookshop_name: splitImage
     imagePath: /src/assets/mark-and-kimberly.png
     altText: Mark and Kimberly
