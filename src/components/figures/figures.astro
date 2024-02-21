@@ -1,0 +1,30 @@
+---
+const { left, middle, right } = Astro.props;
+
+interface Props {
+  left: any;
+  middle: any;
+  right: any;
+}
+---
+
+<div class="figures-wrapper">
+  <div class="left">
+    {left.prefix && <span class="percent">{left.prefix}</span>}
+    <span class="counter">{left.number}</span>
+    {left.suffix && <span class="percent">{left.suffix}</span>}
+    {left.subtitle}
+  </div>
+  <div class="middle">
+    {middle.prefix && <span class="percent">{middle.prefix}</span>}
+    <span class="counter">{middle.number}</span>
+    {middle.suffix && <span class="percent">{middle.suffix}</span>}
+    {middle.subtitle}
+  </div>
+  <div class="right">
+    {right.prefix && <span class="percent">{right.prefix}</span>}
+    <span class="counter">{right.number}</span>
+    {right.suffix && <span class="percent">{right.suffix}</span>}
+    {right.subtitle}
+  </div>
+</div>

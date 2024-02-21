@@ -25,22 +25,22 @@ content_blocks:
     button:
       url: /mission/
       text: Explore how we work
-  # - _bookshop_name: figures
-  #   left:
-  #     prefix: +
-  #     number: 37
-  #     suffix: "%"
-  #     subtitle: Sales Growth
-  #   middle:
-  #     prefix:
-  #     number: 2
-  #     suffix: x
-  #     subtitle: Pricing
-  #   right:
-  #     prefix: "-"
-  #     number: 69
-  #     suffix: "%"
-  #     subtitle: Employee Turnover
+  - _bookshop_name: figures
+    left:
+      prefix: +
+      number: 37
+      suffix: "%"
+      subtitle: Sales Growth
+    middle:
+      prefix:
+      number: 2
+      suffix: x
+      subtitle: Pricing
+    right:
+      prefix: "-"
+      number: 69
+      suffix: "%"
+      subtitle: Employee Turnover
   # - _bookshop_name: clientQuotes
   - _bookshop_name: splitImage
     imagePath: /src/assets/mark-and-kimberly.png
