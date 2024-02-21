@@ -1,0 +1,58 @@
+---
+import footer from "@data/footer.json";
+import { getImage } from "astro:assets";
+
+const logoImage = await getImage({
+  src: footer.logo,
+  format: "svg",
+  width: 96.914,
+  height: 32,
+});
+---
+
+<div class="footer">
+  <div class="footer-top">
+    <div class="contact-title">{footer.emailTitle}</div>
+    <div class="contact">{footer.email}</div>
+    <div class="footer-menu">
+      <ul>
+        {
+          footer.menu.map((link) => (
+            <li class="nav-item">
+              <a href={`${link.link}`} class="link">
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="footer-socials">
+      {
+        footer["social"].map((link) => (
+          <a href={`${link.link}`} class="link">
+            {link.text}
+          </a>
+        ))
+      }
+    </div>
+    <div class="footer-logo">
+      <picture>
+        <source srcset={logoImage.src} />
+        <img src={logoImage.src} alt="logo Squint" />
+      </picture>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    {
+      footer["bottom-menu"].map((link) => (
+        <li class="nav-item">
+          <a href={`${link.link}`} class="link">
+            {link.text}
+          </a>
+        </li>
+      ))
+    }
+  </div>
+</div>

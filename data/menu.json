@@ -1,0 +1,21 @@
+{
+  "logo": "/src/assets/logos/logo-black.svg",
+  "items": [
+    {
+      "link": "/",
+      "text": "Home"
+    },
+    {
+      "link": "/mission/",
+      "text": "What we do"
+    },
+    {
+      "link": "/about/",
+      "text": "Who we are"
+    }
+  ],
+  "btn": {
+    "link": "/signup/",
+    "text": "Let's talk"
+  }
+}

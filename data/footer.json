@@ -1,37 +1,43 @@
 {
-  "logo": "/images/logos/logo-wordmark-blue.png",
-  "logo_url": "/",
-  "copyright": "MyCompany. All rights reserved.",
-  "links": [
+  "emailTitle": "New Business",
+  "email": "info@squintconsulting.com",
+  "menu": [
     {
-      "link": "/blog/",
-      "text": "Blog"
+      "link": "/",
+      "text": "Home"
     },
     {
-      "link": "/feed.xml",
-      "text": "RSS Feed"
+      "link": "/mission/",
+      "text": "What we do"
+    },
+    {
+      "link": "/about/",
+      "text": "Who we are"
+    },
+    {
+      "link": "/contact/",
+      "text": "Contact"
     }
   ],
   "social": [
     {
-      "link": "https://www.facebook.com/mycompany",
-      "social_icon": "ph-facebook-logo"
+      "link": "https://www.linkedin.com",
+      "text": "LinkedIn"
+    }
+  ],
+  "logo": "/src/assets/logos/logo-green.svg",
+  "bottom-menu": [
+    {
+      "link": "/",
+      "text": "Home"
     },
     {
-      "link": "https://www.instagram.com/mycompany",
-      "social_icon": "ph-instagram-logo"
+      "link": "/cookie-policy/",
+      "text": "Cookie Policy"
     },
     {
-      "link": "https://www.twitter.com/mycompany",
-      "social_icon": "ph-twitter-logo"
-    },
-    {
-      "link": "https://www.github.com/mycompany",
-      "social_icon": "ph-github-logo"
-    },
-    {
-      "link": "https://www.youtube.com/mycompany",
-      "social_icon": "ph-youtube-logo"
+      "link": "/privacy-policy/",
+      "text": "Privacy Policy"
     }
   ]
 }

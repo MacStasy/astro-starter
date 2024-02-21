@@ -1,9 +1,10 @@
 ---
-import '../styles/main.scss';
-import site from '../../data/site.json';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import { SEO } from 'astro-seo';
+import "../styles/main.scss";
+import site from "../../data/site.json";
+import Header from "@components/header";
+import Nav from "@components/header/nav.astro";
+import Footer from "@components/footer/footer.astro";
+import { SEO } from "astro-seo";
 
 export interface SEOProps {
   page_description: string | null;
@@ -52,7 +53,7 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
         basic: {
           title: Astro.props.title,
           url: baseUrl?.toString(),
-          type: `${seo?.open_graph_type || 'website'}`,
+          type: `${seo?.open_graph_type || "website"}`,
           image: image,
         },
         optional: {
@@ -66,12 +67,13 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
       twitter={{
         creator: `${seo?.author_twitter_handle || site.twitter_site}`,
         site: `${site.twitter_site}`,
-        card: 'summary_large_image',
+        card: "summary_large_image",
       }}
     />
   </head>
   <body>
-    <Header />
+    <!-- <Header /> -->
+    <Nav />
     <main>
       <slot />
     </main>
