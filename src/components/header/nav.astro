@@ -1,22 +1,13 @@
 ---
 import SquintButton from "@components/squintbutton/squintbutton.astro";
 import menu from "@data/menu.json";
-// import { getImage } from "astro:assets";
-
-// const logoImage = await getImage({
-//   src: menu.logo,
-//   format: "svg",
-//   width: 96.914,
-//   height: 32,
-// });
+import { Image } from "astro:assets";
+import headerLogo from "src/assets/logos/logo-black.svg";
 ---
 
 <nav class="navbar">
   <div class="header-logo">
-    <!-- <picture>
-      <source srcset={logoImage.src} />
-      <img src={logoImage.src} alt="logo Squint" />
-    </picture> -->
+    <Image src={headerLogo} alt="Squint Logo" />
   </div>
   <ul>
     {
