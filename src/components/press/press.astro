@@ -1,0 +1,22 @@
+---
+const { title, articles } = Astro.props;
+---
+
+<div class="press-wrapper">
+  <div class="tile">{title}</div>
+
+  <div class="articles">
+    {
+      articles.map((article: { title: Text; date: Text; url: URL }) => (
+        <>
+          <div class="article">
+            <a href={article.url} class="title">
+              {article.title}
+            </a>
+            <p class="date">{article.date}</p>
+          </div>
+        </>
+      ))
+    }
+  </div>
+</div>

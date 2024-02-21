@@ -33,4 +33,27 @@ content_blocks:
       position: Co-Founder & MD
       content: "Prior to Squint, Kimberly founded her own New York Based Childcare Startup as well as worked as an Operations Lead in the European startup scene. She’s been featured in the Huffington Post for her thought leadership on how to develop more caring humans."
       imagePath: /src/assets/kimberly.png
+  - _bookshop_name: press
+    title: Latest press
+    articles:
+      - article:
+        title: Olipop named in AdAge's top 5 marketers of the year
+        url: /
+        date: 13.04.23
+      - article:
+        title: Squint talks at SXSW about the unhappiness crisis
+        url: /
+        date: 13.04.23
+      - article:
+        title: DailyPay valuation increases by 75%
+        url: /
+        date: 13.04.23
+  - _bookshop_name: contact
+    titles:
+      - Coffee time
+      - Let's chat
+      - Another title
+      - Example text
+    content: For all new business enquiries please contact
+    email: info@squintconsulting.com
 ---
