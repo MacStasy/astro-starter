@@ -1,8 +1,8 @@
 ---
 _schema: page
-title: Homepage
+title: What we do
 description: >-
-  Homepage description
+  mission description
 seo:
   page_description: >-
     seo description

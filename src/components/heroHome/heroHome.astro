@@ -1,0 +1,24 @@
+---
+import SquintButton from "@components/squintbutton/squintbutton.astro";
+
+interface Props {
+  title: string;
+  content: string;
+  button: any;
+}
+
+const { title = "test", content = "smothengi", button } = Astro.props;
+---
+
+<style>
+  .hero {
+    margin: 1rem 0;
+  }
+</style>
+<div class="hero">
+  <h1>{title}</h1>
+
+  <br />
+  <p>{content}</p>
+  <SquintButton text={button.text} url={button.url} />
+</div>
