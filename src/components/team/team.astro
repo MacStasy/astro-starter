@@ -46,16 +46,35 @@ if (!src) {
 <div class="card">
   <h2>{block.title}</h2>
   <p>{block.content}</p>
-  <Image
-    src={src}
-    alt={block.leftProfile.name}
-    width={block.width}
-    height={block.height}
-  />
-  <Image
-    src={srcR}
-    alt={block.rightProfile.name}
-    width={block.width}
-    height={block.height}
-  />
+
+  <div class="left-profile">
+    <Image
+      src={src}
+      alt={block.leftProfile.name}
+      width={block.width}
+      height={block.height}
+    />
+    <div class="title">
+      {block.leftProfile.name}
+      {block.leftProfile.position}
+    </div>
+    <div class="text">
+      {block.leftProfile.content}
+    </div>
+  </div>
+  <div class="right-profile">
+    <Image
+      src={srcR}
+      alt={block.rightProfile.name}
+      width={block.width}
+      height={block.height}
+    />
+    <div class="title">
+      {block.rightProfile.name}
+      {block.rightProfile.position}
+    </div>
+    <div class="text">
+      {block.rightProfile.content}
+    </div>
+  </div>
 </div>
