@@ -1,0 +1,23 @@
+---
+const { title, content, services } = Astro.props;
+
+interface Props {
+  title: string;
+  content: string;
+  services: any;
+}
+---
+
+<div class="services-wrapper">
+  {title}
+  <p>{content}</p>
+</div>
+
+{
+  services.map((service: { title: Text; content: Text }) => (
+    <>
+      <p class="title">{service.title}</p>
+      <p class="content">{service.content}</p>
+    </>
+  ))
+}

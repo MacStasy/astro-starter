@@ -13,25 +13,30 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  # - _bookshop_name: hero
-  #   imagePath: /src/assets/pexels-pixabay-33786.jpg
-  #   altText: An image
-  #   name: The hero with Astro Image
-  #   width: 800
-  #   height: 800
-  #   icon: user
-  # - _bookshop_name: hero
-  #   imagePath: /src/assets/pexels-pixabay-33786.jpg
-  #   altText: An image
-  #   name: The hero nobody asked for
-  #   width: 300
-  #   height: 300
-  #   icon: times
-  - _bookshop_name: splitImage
-    imagePath: /src/assets/pexels-pixabay-33786.jpg
-    altText: Mark and Kimberly
-    title: Who we are
-    content: Our two founders have helped some of the world's biggest, and fastest growing, brands uncover how to create joy in their products and organizations.
-    width: 774
-    height: 774
+  - _bookshop_name: heroHeading
+    title: "We're a strategic partner to brands guiding them on how to tap into today's biggest growth driver: happiness, health and wellbeing."
+    button:
+      url: /mission/
+      text: More about what we do
+  - _bookshop_name: services
+    title: Services
+    content: "We help clients identify which levers they need to pull to take the next successful step in their journey and keep growing. Our offering is organized around three core services:"
+    services:
+      - service:
+        title: 01 Growth & Measurement Strategy
+        content: We offer unique insight into how to make today’s consumer happy, and how to effectively measure healthy growth.
+      - service:
+        title: 02 Brand Transformation
+        content: We create positionings, platforms and identities grounded in the principles of modern happiness branding.
+      - service:
+        title: 03 Product & Service Innovation
+        content: We help identify breakthrough new services and products that can light up consumers and unlock new opportunities.
+  - _bookshop_name: contact
+    titles:
+      - Coffee time
+      - Let's chat
+      - Another title
+      - Example text
+    content: For all new business enquiries please contact
+    email: info@squintconsulting.com
 ---
