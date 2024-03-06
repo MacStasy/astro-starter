@@ -20,7 +20,7 @@ content_blocks:
   - _bookshop_name: hero
     imagePath: /src/assets/pexels-pixabay-33786.jpg
     altText: An image
-    name: The hero with Astro Image
+    name: The hero with Astro Image yep
     width: 800
     height: 800
     icon: user
