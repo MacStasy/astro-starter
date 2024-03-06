@@ -4,16 +4,14 @@
   --accent: 136, 58, 234;
   --accent-light: 224, 204, 250;
   --accent-dark: 49, 10, 101;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    rgb(var(--accent-light)) 30%,
-    white 60%
-  );
+  --accent-gradient: linear-gradient(45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%);
 }
 
 html {
-  font-family: system-ui, sans-serif;
+  font-family: 'Inter Variable', sans-serif, system-ui;
   background: #f5f7fd;
   background-size: 224px;
 }
@@ -36,6 +34,7 @@ h2 {
   font-weight: bolder !important;
   margin-block: 1.5rem 0.25rem !important;
 }
+
 h3 {
   font-size: 1.5rem !important;
   margin-block: 1.5rem 0.25rem !important;
