@@ -1,6 +1,6 @@
 ---
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 interface Props {
   imagePath: string;
@@ -13,14 +13,14 @@ interface Props {
 
 const block = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/*.{jpeg,jpg,png,gif}',
+  "/src/assets/*.{jpeg,jpg,png,gif}",
   { eager: true }
 );
 
 const imageSrc = images[block.imagePath]?.default;
 const src =
-  typeof imageSrc === 'string'
-    ? imageSrc.replace(/^\./, '/_cloudcannon')
+  typeof imageSrc === "string"
+    ? imageSrc.replace(/^\./, "/_cloudcannon")
     : imageSrc ?? block.imagePath;
 
 if (!src) {
@@ -29,6 +29,14 @@ if (!src) {
   );
 }
 ---
+
+<style lang="scss">
+  @import "/src/styles/fluid.scss";
+
+  h1 {
+    font-size: #{fluid(2.4375rem, 3.8125rem)};
+  }
+</style>
 
 <div class="card">
   <h2><i class=`fa-solid fa-${ block.icon }`></i>{block.name}</h2>
