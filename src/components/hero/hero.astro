@@ -31,7 +31,46 @@ if (!src) {
 ---
 
 <style lang="scss">
-  @import "/src/styles/fluid.scss";
+  @use "sass:math";
+
+  $default-min-bp: 22.5rem;
+  $default-max-bp: 48rem;
+
+  @function round($number, $decimals: 0) {
+    $n: 1;
+
+    @if $decimals >0 {
+      @for $i from 1 through $decimals {
+        $n: $n * 10;
+      }
+    }
+
+    @return math.div(math.round($number * $n), $n);
+  }
+
+  @function fluid(
+    $min-size,
+    $max-size,
+    $min-breakpoint: $default-min-bp,
+    $max-breakpoint: $default-max-bp,
+    $unit: vw
+  ) {
+    $slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
+    $slope-to-unit: round($slope * 100, 3);
+    $intercept: round($min-size - $slope * $min-breakpoint, 3);
+    $min-size: round($min-size, 3);
+    $max-size: round($max-size, 3);
+    @return clamp(
+      #{$min-size},
+      #{$slope-to-unit}#{$unit} + #{$intercept},
+      #{$max-size}
+    );
+  }
+
+  @media screen and (min-width: 768px) {
+    $default-min-bp: 48rem !global;
+    $default-max-bp: 90rem !global;
+  }
 
   h1 {
     font-size: #{fluid(2.4375rem, 3.8125rem)};
